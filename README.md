@@ -1,5 +1,15 @@
-# Terraform Deployment Scripts
+# Terraform Deployment Scripts (Attila Macskasy's fork)
+
+## Purpose of This Fork
+
+This repository is a fork of Fortinet's [fortigate-terraform-deploy](https://github.com/fortinet/fortigate-terraform-deploy).
+
+The goal of this fork is to explore and experiment with multi-cloud networking solutions powered by Fortinet.
+
+It's an exciting journey!
+
 ## Introduction
+
 This project includes a set of terraform scripts for getting started with different cloud-providers with Fortinet.
 
 * [AWS](https://github.com/fortinet/fortigate-terraform-deploy/tree/main/aws)
