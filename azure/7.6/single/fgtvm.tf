@@ -8,6 +8,10 @@ resource "azurerm_image" "custom" {
     os_state = "Generalized"
     blob_uri = var.customuri
     size_gb  = 2
+    // The argument "storage_type" is required, but no definition was found. 
+    // for reference: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/image
+    // storage_type - (Required) The type of Storage Disk to use. Possible values are Premium_LRS, PremiumV2_LRS, Premium_ZRS, Standard_LRS, StandardSSD_LRS, StandardSSD_ZRS and UltraSSD_LRS. Changing this forces a new resource to be created.
+    storage_type = "Standard_LRS"
   }
 }
 

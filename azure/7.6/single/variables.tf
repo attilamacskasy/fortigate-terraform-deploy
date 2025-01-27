@@ -8,7 +8,9 @@ variable "tenant_id" {}
 // arm - Standard_D2ps_v5
 variable "size" {
   type    = string
-  default = "Standard_F4s_v2"
+  //default = "Standard_F4s_v2"
+  //changed due to limitations in FortiGate EVAL (Maximum of 1 CPU and 2 GB of memory) https://docs.fortinet.com/document/fortigate/7.4.7/administration-guide/441460 
+  default = "Standard_B1s"
 }
 
 // To use custom image
@@ -36,13 +38,15 @@ variable "custom_image_resource_group_name" {
 // To accept marketplace agreement
 // Default is false
 variable "accept" {
-  default = "false"
+  //default = "false"
+  default = "true"
 }
 
 // License Type to create FortiGate-VM
 // Provide the license type for FortiGate-VM Instances, either byol or payg.
 variable "license_type" {
   default = "payg"
+  //default = "byol"
 }
 
 // instance architect
@@ -94,17 +98,18 @@ variable "fgtversion" {
 
 variable "adminusername" {
   type    = string
-  default = "azureadmin"
+  default = "cloudadmin"
 }
 
 variable "adminpassword" {
   type    = string
-  default = "Fortinet123#"
+  default = "Fortinet.1234#"
 }
 
 variable "location" {
   type    = string
-  default = "westus2"
+  default = "westeurope"
+  //default = "westus2"
 }
 
 variable "vnetcidr" {

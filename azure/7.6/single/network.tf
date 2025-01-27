@@ -135,7 +135,13 @@ resource "azurerm_network_interface" "fgtport2" {
   name                 = "fgtport2"
   location             = var.location
   resource_group_name  = azurerm_resource_group.myterraformgroup.name
-  enable_ip_forwarding = true
+
+  //enable_ip_forwarding = true
+ // An argument named "enable_ip_forwarding" is not expected here.
+ 
+  ip_forwarding_enabled = true
+  // for reference: https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface 
+  // ip_forwarding_enabled - (Optional) Should IP Forwarding be enabled? Defaults to false.
 
   ip_configuration {
     name                          = "ipconfig1"
