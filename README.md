@@ -1,10 +1,12 @@
 # Terraform Deployment Scripts (Attila Macskasy's fork)
 
-## Purpose of This Fork
+## Purpose of This Fork - experiment and learn
 
 This repository is a fork of Fortinet's [fortigate-terraform-deploy](https://github.com/fortinet/fortigate-terraform-deploy).
 
 The goal of this fork is to explore and experiment with multi-cloud networking solutions powered by Fortinet.
+
+I have tested this scenario [azure/7.6/single](azure/7.6/single) with Terraform and published a blog article about my findings [Terraform deployment for FortiGate Next-Generation Firewall in Microsoft Azure](https://cloudmigration.blog/terraform-deployment-for-fortigate-next-generation-firewall-in-microsoft-azure/)
 
 It's an exciting journey!
 
