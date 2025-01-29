@@ -10,6 +10,8 @@ I have tested this scenario [azure/7.6/single](azure/7.6/single) with Terraform 
 
 It's an exciting journey!
 
+(Test)
+
 ## Introduction
 
 This project includes a set of terraform scripts for getting started with different cloud-providers with Fortinet.
